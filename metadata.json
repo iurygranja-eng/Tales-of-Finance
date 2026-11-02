@@ -1,0 +1,6 @@
+{
+  "name": "Tales of Finance - RPG Financial Management",
+  "description": "Aplicativo de gestão financeira comportamental gamificado estilo Sea of Stars, com sistema de Party, Boss Fights de faturas de cartão, motor de transações OFX de dupla camada e RPG de economia.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

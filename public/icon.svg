@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <radialGradient id="bg-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#1b1e38" />
+      <stop offset="100%" stop-color="#090c21" />
+    </radialGradient>
+    <linearGradient id="gold-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffe2ad" />
+      <stop offset="50%" stop-color="#f5c253" />
+      <stop offset="100%" stop-color="#b88300" />
+    </linearGradient>
+    <linearGradient id="cyan-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d3fbff" />
+      <stop offset="60%" stop-color="#00eefc" />
+      <stop offset="100%" stop-color="#007982" />
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="12" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Deep Cosmic Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg-grad)" />
+  <rect width="512" height="512" rx="112" fill="none" stroke="#f5c253" stroke-opacity="0.35" stroke-width="8" />
+
+  <!-- Solar Corona Rays -->
+  <g stroke="url(#gold-grad)" stroke-width="12" stroke-linecap="round" opacity="0.85">
+    <line x1="256" y1="72" x2="256" y2="112" />
+    <line x1="256" y1="400" x2="256" y2="440" />
+    <line x1="72" y1="256" x2="112" y2="256" />
+    <line x1="400" y1="256" x2="440" y2="256" />
+    <line x1="126" y1="126" x2="156" y2="156" />
+    <line x1="356" y1="356" x2="386" y2="386" />
+    <line x1="126" y1="386" x2="156" y2="356" />
+    <line x1="356" y1="156" x2="386" y2="126" />
+  </g>
+
+  <!-- Golden Sun Core -->
+  <circle cx="256" cy="256" r="110" fill="url(#gold-grad)" filter="url(#glow)" />
+
+  <!-- Cyan Moon Crescent Eclipse -->
+  <path d="M 256,146 A 110,110 0 0,1 366,256 A 110,110 0 0,1 256,366 A 110,110 0 0,0 300,256 A 110,110 0 0,0 256,146 Z" fill="url(#cyan-grad)" />
+
+  <!-- Constellation Sparkles -->
+  <circle cx="220" cy="230" r="14" fill="#ffffff" />
+  <circle cx="295" cy="275" r="9" fill="#ffffff" />
+  <polygon points="190,170 196,186 212,192 196,198 190,214 184,198 168,192 184,186" fill="#f5c253" opacity="0.9" />
+  <polygon points="325,325 330,338 343,343 330,348 325,361 320,348 307,343 320,338" fill="#00eefc" opacity="0.9" />
+</svg>
